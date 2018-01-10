@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Authorization</title>
+	</head>
+	<body>
+		<h1>Авторизация</h1>
+		<form method = "POST" action = "/countries">
+			<input name = "vk_name" id = "id_vk_name" placeholder = "Имя учетной записи" />
+			<input name = "vk_pw" id = "id_vk_pw" type = "password" placeholder = "Пароль" />
+			<input type = "submit" />
+		{% csrf_token %}
+		</form>
+		{% block table %}
+		{% endblock %}
+	</body>
+</html>

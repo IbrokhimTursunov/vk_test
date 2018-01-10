@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Test task by Ibrokhim Tursunov</title>
+	</head>
+	<body>
+		<h1>Список названий городов</h1>
+		<form method = "GET" action = "">
+			<input type = "submit" value = "Отсортировать" />
+			<input type = "hidden" name = "sorted" value = 1 />
+		</form>
+		<table id="id_list_table">
+			{% for city in cities %}
+				<tr><td>{{ city }}</td></tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
